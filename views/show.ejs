@@ -2,6 +2,7 @@
 
 <link rel="stylesheet" href="/css/starability.css">
 <link rel="stylesheet" href="/css/show.css"> 
+<script src="/js/ejs.js"></script>
 <script src="/js/show.js"></script>
 <script src="/js/ValidateForm.js"></script>
 
@@ -55,6 +56,9 @@
         <% } %>
         
         <div id="comments">
+            <% for(let review of movie.Reviews) { %>
+                <%- include("partials/review", { review }); %>
+            <% } %>
         </div>
     </div>
 </div>
