@@ -57,6 +57,7 @@ $(document).ready(async () => {
 
 $(document).on("click", ".btn-delete", (event) => {
     event.preventDefault();
+
     $.ajax({
         url: `/m/${movie.imdbID}/reviews/${event.target.id}/`,
         type: "DELETE",

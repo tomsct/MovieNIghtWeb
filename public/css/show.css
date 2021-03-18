@@ -7,6 +7,10 @@
     height: 268px;
 }
 
+svg{
+    pointer-events: none;
+}
+
 h1{
     text-align: center;
 }
